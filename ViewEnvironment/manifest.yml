@@ -1,7 +1,7 @@
 ---
 applications:
-- name: env
-  host: env-${random-word}
+- name: dotNetDemo
+  host: zb-dotnetdemo
   memory: 512m
   stack: windows2012R2
   buildpack: binary_buildpack

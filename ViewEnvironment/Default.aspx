@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pivotal CF Workshop | Welcome</title>
+    <title>Pivotal CF Meetup | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/modernizr.js"></script>
 </head>
@@ -17,19 +17,20 @@
         <nav class="top-bar">
             <ul class="title-area">
                 <li class="name">
-                    <h1><a href="./">Pivotal CF</a></h1>
+                    <h1><a href="./">Pivotal Cloud Foundry Demo</a></h1>
                 </li>
             </ul>
         </nav>
         <div class="row">
             <div class="large-12 columns">
-                <h3>Welcome to Pivotal CF</h3>
+                <h3>Example .NET app running on Pivotal Cloud Foundry</h3>
                 <hr />
             </div>
 
             <div class="row" runat="server" visible="false" id="attendeePane">
                 <div class="large-12 columns">
-                    <h3>All Attendees</h3>
+                    <h3>Datagrid bound to MySQL Service Instance:</h3>
+                    <h5>List of Attendees</h5>
                     <hr />
                     <asp:GridView ID="gridAttendees" runat="server"
                         AutoGenerateColumns="false"
@@ -59,39 +60,39 @@
             <div class="row">
                 <div class="large-12 columns">
                     <div class="panel">
-                        <h4>Environment Information:</h4>
+                        <h4>App Instance info and Env. Variables:</h4>
                         <br />
                         <p>
-                            The current server time is <em>
-                                <asp:Label ID="lblTime" runat="server"></asp:Label></em>
+                            Current server time of Diego Cell: <em><b>
+                                <asp:Label ID="lblTime" runat="server"></asp:Label></b></em>
                         </p>
                         <p>
-                            The current .NET version is <em>
-                                <asp:Label ID="lblDotNetVersion" runat="server"></asp:Label></em>
+                            .NET version: <em><b>
+                                <asp:Label ID="lblDotNetVersion" runat="server"></asp:Label></b></em>
                         </p>
                         <p>
-                            The application port is <em>
-                                <asp:Label ID="lblPort" runat="server"></asp:Label></em>
+                            Application port: <em><b>
+                                <asp:Label ID="lblPort" runat="server"></asp:Label></b></em>
                         </p>
                         <p>
-                            The instance ID is <em>
-                                <asp:Label ID="lblInstanceID" runat="server"></asp:Label></em>
+                            App instance GUID: <em><b>
+                                <asp:Label ID="lblInstanceID" runat="server"></asp:Label></b></em>
                         </p>
                         <p>
-                            The instance index is <em>
-                                <asp:Label ID="lblInstanceIndex" runat="server"></asp:Label></em>
+                            App instance index: <em><b>
+                                <asp:Label ID="lblInstanceIndex" runat="server"></asp:Label></b></em>
                         </p>
                         <p>
-                            The instance was started at <em>
-                                <asp:Label ID="lblInstanceStart" runat="server"></asp:Label></em>
+                            Cell Uptime: since <em><b>
+                                <asp:Label ID="lblInstanceStart" runat="server"></asp:Label></b></em>
                         </p>
                         <p>
-                            The bound services are <em>
-                                <asp:Label ID="lblBoundServices" runat="server"></asp:Label></em>
+                            vcap_services: <em><b>
+                                <asp:Label ID="lblBoundServices" runat="server"></asp:Label></b></em>
                         </p>
                         <p>
-                            The detected DB engine is <em>
-                                <asp:Label ID="lblDbEngine" runat="server"></asp:Label></em>
+                            DB engine: <em><b>
+                                <asp:Label ID="lblDbEngine" runat="server"></asp:Label></b></em>
                         </p>
                     </div>
                     <hr />
